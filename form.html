@@ -15,30 +15,51 @@
         <p>회원 정보를 입력하세요.</p>
     </div>
 
-    <form>
-    <p>이름</p>
+    <form action="form.php" method="post">
+    <p class="mb-1 pt-3  required" >이름</p>
     <input type ="text" placeholder="이름을 입력하세요.">
 
-    <p>이메일</p>
+    <p class="mb-1 pt-3  required">이메일</p>
     <input type="text" placeholder="이메일을 입력하세요.">
 
-    <p>생년월일</p>
-    <input type="date"
+    <p class="mb-1 pt-3  required">생년월일</p>
+    <input type="date">
 
-    <p>전공</p>
+    <p class="mb-1 pt-3  required">학부</p>
     <select>
-
+        <option>ai컴퓨터전자공학부</option>
+        <option>기계제어공학부</option>
+        <option>법학부</option>
+        <option>상담심리학부</option>
+        <option>국제지역학부</option>
     </select>
 
-    <p>관심분야</p>
+    <p class="mb-1 pt-3  required">관심분야</p>
+    <input type="checkbox" >
+    <label>web</label><br>
 
-    <자기소개>
-    <>
+    <input type="checkbox">
+    <label>AI</label>
+
+    <p class="mb-1 pt-3  required">자기소개</p>
+    <input type="text">
     </form>
 
 
     </div>
 
+    <div class="m-5 mt-2">
+        <button class="btn btn-primary">등록</button>
+        <button class="btn btn-outline-success">초기화</button>
+    </div>
+
+
+    
+<script>
+    const form =document.query selector ("#userform"); 
+    form.addEventListner("submit", function(event) {alert("등록완료");} );
+</script>
 
 </body>
 </html>
+
