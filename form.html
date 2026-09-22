@@ -15,7 +15,7 @@
         <p>회원 정보를 입력하세요.</p>
     </div>
 
-    <form action="form.php" method="post">
+    <form id="userform" action="form.php" method="post">
     <p class="mb-1 pt-3  required" >이름</p>
     <input type ="text" placeholder="이름을 입력하세요.">
 
@@ -43,8 +43,6 @@
 
     <p class="mb-1 pt-3  required">자기소개</p>
     <input type="text">
-    </form>
-
 
     </div>
 
@@ -53,10 +51,12 @@
         <button class="btn btn-outline-success">초기화</button>
     </div>
 
+</form>
+
 
     
 <script>
-    const form =document.query selector ("#userform"); 
+    const form =document.querySelector ("#userform"); 
     form.addEventListner("submit", function(event) {alert("등록완료");} );
 </script>
 
