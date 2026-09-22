@@ -56,8 +56,12 @@
 
     
 <script>
-    const form =document.querySelector ("#userform"); 
-    form.addEventListner("submit", function(event) {alert("등록완료");} );
+    const form = document.querySelector("#userform");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("등록완료");
+    });
 </script>
 
 </body>
