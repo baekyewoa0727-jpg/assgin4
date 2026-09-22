@@ -25,8 +25,15 @@
     <p class="mb-1 pt-3  required">생년월일</p>
     <input type="date">
 
+    <p class="mb-1 pt-3  required">성별</p>
+    <input type="radio" name="gender" value="male">
+    <label>남성</label><br>
+    <input type="radio" name="gender" value="female">
+    <label>여성</label><br>
+
     <p class="mb-1 pt-3  required">학부</p>
     <select>
+        <option value="">전공을 선택하세요</option>
         <option>ai컴퓨터전자공학부</option>
         <option>기계제어공학부</option>
         <option>법학부</option>
@@ -36,13 +43,16 @@
 
     <p class="mb-1 pt-3  required">관심분야</p>
     <input type="checkbox" >
-    <label>web</label><br>
-
+    <label>WEB</label><br>
     <input type="checkbox">
-    <label>AI</label>
+    <label>AI</label><br>
+    <input type="checkbox">
+    <label>APP</label>
+
+
 
     <p class="mb-1 pt-3  required">자기소개</p>
-    <input type="text">
+    <textarea placeholder="자기소개를 입력하세요." maxlength="100" minlength="10"></textarea>
 
     </div>
 
