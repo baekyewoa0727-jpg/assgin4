@@ -16,11 +16,14 @@
     </div>
 
     <form id="userform" action="form.php" method="post">
-    <p class="mb-1 pt-3  required" >이름</p>
-    <input type ="text" placeholder="이름을 입력하세요.">
+    <p class="mb-1 pt-3 " >이름</p>
+    <input type ="text" placeholder="이름을 입력하세요." required>
+
+    <p class="mb-1 pt-3 required">전화번호</p>
+    <input type="tel" name="phone" placeholder="010-0000-0000" required>
 
     <p class="mb-1 pt-3  required">이메일</p>
-    <input type="text" placeholder="이메일을 입력하세요.">
+    <input type="email" placeholder="이메일을 입력하세요." required>
 
     <p class="mb-1 pt-3  required">생년월일</p>
     <input type="date">
@@ -30,6 +33,16 @@
     <label>남성</label><br>
     <input type="radio" name="gender" value="female">
     <label>여성</label><br>
+
+    <p class="mb-1 pt-3  required">혈액형</p>
+    <input type="radio" name="blood" value="a">
+    <label>A</label><br>
+    <input type="radio" name="blood" value="ab">
+    <label>AB</label><br>
+    <input type="radio" name="blood" value="b">
+    <label>B</label><br>
+    <input type="radio" name="blood" value="o">
+    <label>O</label><br>
 
     <p class="mb-1 pt-3  required">학부</p>
     <select>
@@ -41,22 +54,34 @@
         <option>국제지역학부</option>
     </select>
 
+    <p class="mb-1 pt-3 required">학년</p>
+
+    <select name="grade" required>
+    <option value="">학년을 선택하세요</option>
+    <option>1학년</option>
+    <option>2학년</option>
+    <option>3학년</option>
+    <option>4학년</option>
+    <option>추가학기</option>
+    </select>
+
     <p class="mb-1 pt-3  required">관심분야</p>
-    <input type="checkbox" >
+    <input type="checkbox" name="interest" value="web" >
     <label>WEB</label><br>
-    <input type="checkbox">
+    <input type="checkbox" name="interest" value="ai">
     <label>AI</label><br>
-    <input type="checkbox">
+    <input type="checkbox" name="interest"  value="app">
     <label>APP</label>
 
-
+<p class="mb-1 pt-3">좋아하는 색상</p>
+<input type="color" name="color">
 
     <p class="mb-1 pt-3  required">자기소개</p>
-    <textarea placeholder="자기소개를 입력하세요." maxlength="100" minlength="10"></textarea>
+    <textarea placeholder="자기소개를 입력하세요." maxlength="100" minlength="10" required></textarea>
 
     </div>
 
-    <div class="m-5 mt-2">
+    <div class="m-5 mt-4">
         <button class="btn btn-primary">등록</button>
         <button class="btn btn-outline-success">초기화</button>
     </div>
