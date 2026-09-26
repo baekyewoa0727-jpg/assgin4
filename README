@@ -1,0 +1,21 @@
+22400330 백예원
+
+1. key learning
+HTML에서 input시 다양한 폼 요소를 사용하는 방법을 배웠다 
+css에서 요소의 디자인을 적용하는 방법을 복습했다 
+
+2. form elements: 
+text , tel, email, date, radio, checkbox, color, select, textarea사용
+텍스트, 전화번호, 이메일, 날짜, 선택지 중복 미허용, 선택지 중복 허용, 색상, 목록중 하나 선택, 긴 텍스트 입력
+
+3. HTML vs CSS:
+form : bootstrap을 바탕으로 디자인한 기본적인 html틀 
+form2 : css를 상단에 추가하여 다른 디자인을 적용하였다 
+
+
+4. Problem & Solution: 
+form2를 제작하는 과정에서 버튼의 배경색을 수정하고 싶었는데 css코드로 수정되지 않았다. 찾아보니 bootstrap의 코드로 인해 작동하지 않았던 것-> btn-primary와 같이 클래스를 지정하여 명확한 적용 대상을 설정해 해결했다. 
+
+5. Reflection: 
+HTML의 input은 type에 따라 text, radio, checkbox, date 등 다양한 형태로 사용할 수 있다는 것을 알게 되었다.
+또 처음에는 CSS의 display가 무엇을 의미하는지 몰랐으나 ai에게 질문하여 block, inline, inline-block의 차이를 배우면서 요소의 배치 방식을 결정하는 속성이라는 것을 알게 되었다.
